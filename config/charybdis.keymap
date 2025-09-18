@@ -29,11 +29,11 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE      &kp F2  &kp F3  &kp F4        &kp F5     &kp F6           &kp F7     &kp F8      &kp F9      &kp F10            &kp F11  &kp F12
-&kp CAPS        &none   &none   &none         &none      &kp PAGE_UP      &none      &none       &kp UP      &none              &none    &bt BT_NXT
-&kp LEFT_SHIFT  &none   &none   &none         &none      &kp PAGE_DOWN    &none      &kp LEFT    &kp DOWN    &kp RIGHT          &none    &bt BT_CLR
-&kp LCTRL       &none   &none   &none         &none      &none            &none      &none       &kp PERIOD  &kp RIGHT_BRACKET  &none    &kp EQUAL
-                                &kp LEFT_WIN  &kp SPACE  &none            &kp LALT   &kp DELETE
+&kp ESCAPE      &kp F2  &kp F3  &kp F4        &kp F5     &kp F6           &kp F7           &kp F8             &kp F9      &kp F10            &kp F11  &kp F12
+&kp CAPS        &none   &none   &none         &none      &kp PAGE_UP      &kp C_VOLUME_UP  &none              &kp UP      &none              &none    &bt BT_NXT
+&kp LEFT_SHIFT  &none   &none   &none         &none      &kp PAGE_DOWN    &kp C_VOL_DN     &kp LEFT           &kp DOWN    &kp RIGHT          &none    &bt BT_CLR
+&kp LCTRL       &none   &none   &none         &none      &none            &none            &none              &kp PERIOD  &kp RIGHT_BRACKET  &none    &kp EQUAL
+                                &kp LEFT_WIN  &kp SPACE  &none            &kp LALT         &kp RIGHT_CONTROL
                                               &mkp MB1   &mkp MB2         &kp ENTER
             >;
 
@@ -42,10 +42,10 @@
 
         layer_2 {
             bindings = <
-&kp F1  &kp F2  &kp F3           &kp F4  &kp F5  &kp F6           &kp F7            &kp F8             &kp F9    &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans           &trans  &trans  &kp PAGE_UP      &trans            &trans             &mkp MB3  &trans   &trans   &trans
-&trans  &trans  &kp PRINTSCREEN  &trans  &trans  &kp PAGE_DOWN    &trans            &mkp MB1           &mkp MB2  &trans   &trans   &trans
-&trans  &trans  &trans           &trans  &trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3           &kp F4  &kp F5  &kp F6           &kp F7            &kp F8             &kp F9    &kp F10    &kp F11  &kp F12
+&trans  &trans  &trans           &trans  &trans  &kp PAGE_UP      &trans            &trans             &mkp MB3  &trans     &trans   &trans
+&trans  &trans  &kp PRINTSCREEN  &trans  &trans  &kp PAGE_DOWN    &trans            &mkp MB1           &mkp MB2  &mkp MCLK  &trans   &trans
+&trans  &trans  &trans           &trans  &trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp MB1  &mkp MB2   &trans   &trans
                                  &trans  &trans  &trans           &trans            &trans
                                          &trans  &trans           &trans
             >;
